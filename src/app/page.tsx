@@ -9,36 +9,37 @@ import Navbar from '@/app/public/logo-telkom-schools 1.png'
 function page() {
   return (
     <>
+    <div className='h-screen'>
        <div className=' border-b-2 border-black '>
-    <div className='py-4 ml-20 '> {/* Menambahkan border-bottom hitam */}
-        <Image src={Navbar} alt='logo' width={180} quality={100} />
+    <div className='py-6 ml-28 '> {/* Menambahkan border-bottom hitam */}
+        <Image src={Navbar} alt='logo' width={240} quality={100} />
     </div>
     </div>
     <div className='   relative '> 
 
-      <div className='flex items-center  mt-5  shadow-custom '>
-    
+      <div className='flex items-center  mt-10  '>
+  
         <Image 
           src={Foto1} 
           alt='foto1' 
-          className='absolute  top-14 left-96 transform -translate-x-1/2' 
-          width={300} 
+          className='absolute  top-9 left-96 ml-36 transform -translate-x-1/2' 
+          width={420} 
           quality={100}
         />
-        
+     
       
         <Image 
           src={Foto} 
           alt='foto' 
-          className='relative z-10  mt-20 left-20' 
-          width={600}
+          className='relative z-10 ml-10 mt-20 left-20' 
+          width={800}
           quality={100} 
         />
 
       
-        <div className='ml-72 ' >
-          <div className='pb-10'>
-            <h1 className='text-4xl -mt-10 font-bold text-black text-center'>Daftar</h1>
+        <div className='ml-64 ' >
+          <div className='pb-16'>
+            <h1 className='text-6xl -mt-10 font-bold text-black text-center'>Daftar</h1>
           </div>
           <div className=" flex ">
       <form className="  rounded-lg   max-w-lg">
@@ -49,12 +50,12 @@ function page() {
             id="floatingName"
             name="floatingName"
             placeholder=" "
-            className="peer w-96 p-5  border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+            className="peer  px-40 py-7  border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
             
           />
           <label
             htmlFor="floatingName"
-            className="absolute text-gray-500 text-xs duration-300 transform -translate-y-4 scale-75 top-3 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
+            className="absolute text-gray-500 text-sm duration-300 transform -translate-y-4 scale-75 top-5 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
           >
             No. Handphone
           </label>
@@ -66,11 +67,11 @@ function page() {
             id="floatingName"
             name="floatingName"
             placeholder=" "
-            className="peer w-96 p-5 border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+            className="peer px-40 py-7 border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
           />
           <label
             htmlFor="floatingName"
-            className="absolute text-gray-500 text-xs duration-300 transform -translate-y-4 scale-75 top-3 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
+            className="absolute text-gray-500 text-sm duration-300 transform -translate-y-4 scale-75 top-5 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
           >
             Username
           </label>
@@ -83,11 +84,11 @@ function page() {
             id="floatingName"
             name="floatingName"
             placeholder=" "
-            className="form9 peer w-96 p-5 border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+            className="peer px-40 py-7 border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
           />
           <label
             htmlFor="floatingName"
-            className="absolute text-gray-500 text-xs duration-300 transform -translate-y-4 scale-75 top-3 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
+            className="absolute text-gray-500 text-sm duration-300 transform -translate-y-4 scale-75 top-5 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
           >
            Kata Sandi
           </label>
@@ -100,11 +101,11 @@ function page() {
             id="floatingName"
             name="floatingName"
             placeholder=" "
-            className="peer w-96 p-5 border  shadow-custom z-20 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+            className="peer px-40 py-7 border  shadow-custom z-20 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"            
           />
           <label
             htmlFor="floatingName"
-            className="absolute text-gray-500 text-xs duration-300 transform -translate-y-5 scale-75 top-3 left-3 z-0 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
+            className="absolute text-gray-500 text-sm duration-300 transform -translate-y-5 scale-75 top-5 left-3 z-0 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
           >
             Konfirmasi Kata Sandi
           </label>
@@ -112,21 +113,21 @@ function page() {
 
         {/* Submit Button */}
        
-        <div className="ml-20 mt-6">
-          <a href="/login">
+        <div className="ml-36 mt-6">
+          <Link href='/daftar'>
           <button 
           
             type="submit"
-            className="w-56  bg-red-700 font-bold  shadow-custom text-white py-3 rounded-lg hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-red-700"
+            className=" py-4 px-20  bg-red-700 font-bold  shadow-custom text-white  rounded-lg hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-red-700"
           >
             DAFTAR
           </button>
-          </a>
+          </Link>
           </div>
           
         
-        <div className='flex text-xs gap-9 ml-24 mt-2'>
-        <div className=' font-normal relative '>
+        <div className='flex text-sm gap-9 ml-40 mt-2'>
+        <div className='-ml-3 font-normal relative '>
           Sudah Punya Akun?
         </div>
         <Link href='/Login'>
@@ -202,6 +203,7 @@ function page() {
       </form> */}
     </div>
       </div>
+    </div>
     </div>
     </>
   )
