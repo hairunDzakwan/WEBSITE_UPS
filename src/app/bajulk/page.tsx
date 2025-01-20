@@ -13,12 +13,21 @@ import dasi from '@/app/public/Group 75.png'
 import baju from '@/app/public/OJI09440 4.png'
 import celana from '@/app/public/OJI09440 3.png'
 import { FaSearch } from 'react-icons/fa'
-import styles from '@/app/topi/styles.module.css'
+import styles from '@/app/bajulk/styles.module.css'
 import kategori from '@/app/public/Group 82 (1).png'
-import icontopi from '@/app/public/icon topi.png'
-import back from '@/app/public/ep_back.png'
 import home from '@/app/public/ic_baseline-home.png'
 import garis from '@/app/public/Line 3.png'
+import back from '@/app/public/ep_back.png'
+import bajulk from '@/app/public/Frame 190.png'
+import almet from '@/app/public/almet.png'
+import putih from '@/app/public/putih.png'
+import batik from '@/app/public/batik.png'
+import prakter from '@/app/public/praktek.png'
+import pramuka from '@/app/public/pramuka.png'
+import olahraga33 from '@/app/public/olahraga33.png'
+import olahraga32 from '@/app/public/olahraga32.png'
+
+
 
 function page() {
   return (
@@ -26,7 +35,7 @@ function page() {
     <div className='h-screen'>
 
         {/* Header */}
-        <div className=' border-b-2 border-black bg-red-900 relative flex '>
+     <div className=' border-b-2 border-black bg-red-900 relative flex '>
         <Link href="/daftar">
             <Image src={home} alt='home' width={40} quality={100} style={{marginTop:35,marginLeft:20}}/>
         </Link>
@@ -62,16 +71,42 @@ function page() {
     <Image src={User} alt='logo' width={38} quality={100} />
     </div>
     </div>
-    <Link href="/daftar">
+    <Link href="/baju">
     <Image src={back} alt='logo' width={35} quality={100} className={styles.back}/>
     </Link>
 
         {/* Isi */}
-    <div className={styles.baju}>
-    <Image src={icontopi} alt='logo' width={500} quality={100} className={styles.lk} />
-    </div>
-    </div>
+    <div className='flex ml-60 '>
+      <Link href="/bajulk">
+    <Image src={bajulk} alt='logo' width={500} quality={100} className={styles.lk} />
+    </Link>
 
+    
+    <div className={styles.container}>
+    <Link href="/almet">
+    <Image src={almet} alt='logo' width={400} quality={100} className={styles.lk} />
+    </Link>
+    <Link href="/bajuputih">
+    <Image src={putih} alt='logo' width={400} quality={100} className={styles.lk} />
+    </Link>
+    <Link href="/bajulk">
+    <Image src={batik} alt='logo' width={400} quality={100} className={styles.lk} />
+    </Link>
+    <Link href="/bajulk">
+    <Image src={prakter} alt='logo' width={400} quality={100} className={styles.lk} />
+    </Link>
+    <Link href="/bajulk">
+    <Image src={pramuka} alt='logo' width={400} quality={100} className={styles.lk} />
+    </Link>
+    <Link href="/bajulk">
+    <Image src={olahraga33} alt='logo' width={400} quality={100} className={styles.lk} />
+    </Link>
+    <Link href="/bajulk">
+    <Image src={olahraga32} alt='logo' width={400} quality={100} className={styles.lk} />
+    </Link>
+    </div>
+    </div>
+    </div>
   
     </>
   )

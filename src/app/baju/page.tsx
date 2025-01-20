@@ -13,10 +13,14 @@ import dasi from '@/app/public/Group 75.png'
 import baju from '@/app/public/OJI09440 4.png'
 import celana from '@/app/public/OJI09440 3.png'
 import { FaSearch } from 'react-icons/fa'
-import styles from '@/app/daftar/styles.module.css'
+import styles from '@/app/baju/styles.module.css'
 import kategori from '@/app/public/Group 82 (1).png'
 import home from '@/app/public/ic_baseline-home.png'
 import garis from '@/app/public/Line 3.png'
+import back from '@/app/public/ep_back.png'
+import bajulk from '@/app/public/Group 84.png'
+import bajupr from '@/app/public/Group 85.png'
+
 
 
 function page() {
@@ -24,9 +28,9 @@ function page() {
     <>
     <div className='h-screen'>
      <div className=' border-b-2 border-black bg-red-900 relative flex '>
-        <div>
+        <Link href="/daftar">
             <Image src={home} alt='home' width={40} quality={100} style={{marginTop:35,marginLeft:20}}/>
-        </div>
+        </Link>
         <div>
             <Image src={garis} alt='home' width={0.7} quality={100}  style={{marginTop:20, marginLeft:20, opacity:0.5}}/>
         </div>
@@ -38,7 +42,7 @@ function page() {
 
         type="text"
         placeholder="Search..."
-       className='rounded-full py-3 px-4 w-96'
+       className='rounded-full py-3 px-4 w-96 ju'
         style={{width:630, marginLeft:231, marginRight:220, }}
         
       />
@@ -58,12 +62,17 @@ function page() {
     <div className='mt-8 '>
     <Image src={User} alt='logo' width={38} quality={100} />
     </div>
-    
-   
-    
-
-    
-
+    </div>
+    <Link href="/daftar">
+    <Image src={back} alt='logo' width={35} quality={100} className={styles.back}/>
+    </Link>
+    <div className={styles.baju}>
+      <Link href="/bajulk">
+    <Image src={bajulk} alt='logo' width={500} quality={100} className={styles.lk} />
+    </Link>
+    <Link href="/bajupr">
+    <Image src={bajupr} alt='logo' width={500} quality={100} className={styles.pr}/>
+    </Link>
     </div>
     </div>
   
