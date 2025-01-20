@@ -83,30 +83,38 @@ function page() {
 
     
     <div className={styles.container}>
-    <Link href="/almet">
-    <Image src={almet} alt='logo' width={400} quality={100} className={styles.lk} />
-    </Link>
-    <Link href="/bajuputih">
-    <Image src={putih} alt='logo' width={400} quality={100} className={styles.lk} />
-    </Link>
-    <Link href="/bajulk">
-    <Image src={batik} alt='logo' width={400} quality={100} className={styles.lk} />
-    </Link>
-    <Link href="/bajulk">
-    <Image src={prakter} alt='logo' width={400} quality={100} className={styles.lk} />
-    </Link>
-    <Link href="/bajulk">
-    <Image src={pramuka} alt='logo' width={400} quality={100} className={styles.lk} />
-    </Link>
-    <Link href="/bajulk">
-    <Image src={olahraga33} alt='logo' width={400} quality={100} className={styles.lk} />
-    </Link>
-    <Link href="/bajulk">
-    <Image src={olahraga32} alt='logo' width={400} quality={100} className={styles.lk} />
-    </Link>
+
+      <Link href="/lakialmet">
+      <Image src={almet} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      <Link href="/lakibajuputih">
+      <Image src={putih} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      <Link href="/lakibatik">
+      <Image src={batik} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      <Link href="/lakipraktek">
+      <Image src={prakter} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      <Link href="/lakipramuka">
+      <Image src={pramuka} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      <Link href="/lakiskj">
+      <Image src={olahraga33} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      <Link href="/lakiolahraga">
+      <Image src={olahraga32} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      </div>
     </div>
-    </div>
-    </div>
+  </div>
   
     </>
   )

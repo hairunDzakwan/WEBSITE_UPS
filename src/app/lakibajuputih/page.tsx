@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import Counter from "@/app/components/counter";
-import styles from '@/app/almet/styles.module.css';
+import styles from '@/app/lakibajuputih/styles.module.css';
 import Navbar from "@/app/public/telkom-school-logo-white 1.png";
 import Cart from "@/app/public/mdi_cart-outline.png";
 import User from "@/app/public/Group.png";
@@ -83,11 +83,11 @@ function Page() {
           <div className="lg:ml-10 self-center px-5">
             {/* Deskripsi Pesanan */}
             <p className="text-gray-600 text-2xl font-medium">Deskripsi Pesanan</p>
-            <h1 className="text-5xl font-extrabold mb-7">Jas Almamater</h1>
+            <h1 className="text-5xl font-extrabold mb-7">Kemeja Putih</h1>
 
             {/* Harga Pesanan */}
             <p className="text-gray-600 text-2xl font-medium">Harga Pesanan</p>
-            <h1 className="text-4xl font-bold mb-7 text-red-700">Rp 200.000</h1>
+            <h1 className="text-4xl font-bold mb-7 text-red-700">Rp 125.000</h1>
 
             {/* Ukuran */}
             <p className="text-gray-600 text-2xl font-medium">Ukuran</p>

@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import Counter from "@/app/components/counter";
-import styles from '@/app/lakialmet/styles.module.css';
+import styles from '@/app/lakibatik/styles.module.css';
 import Navbar from "@/app/public/telkom-school-logo-white 1.png";
 import Cart from "@/app/public/mdi_cart-outline.png";
 import User from "@/app/public/Group.png";
@@ -13,6 +13,7 @@ import back from "@/app/public/ep_back.png";
 import almet from "@/app/public/Group 87.png";
 import home from "@/app/public/ic_baseline-home.png";
 import garis from "@/app/public/Line 3.png";
+import bjuputih from '@/app/public/bj putih lk.png'
 
 function Page() {
   const [selectedSize, setSelectedSize] = useState(null); // Menyimpan ukuran yang dipilih
@@ -25,15 +26,15 @@ function Page() {
     <>
       {/* HEADER */}
       <div className="h-screen">
-        <div className="border-b-2 border-black bg-red-900 flex items-center py-5 px-5">
+        <div className="border-b-2 border-black bg-red-900 flex items-center py-3 px-5">
           {/* Home Icon */}
           <Link href="/daftar">
-            <Image src={home} alt="home" width={40} quality={100} className="mr-2 mt-2" />
+            <Image src={home} alt="home" width={40} quality={100} className="mr-2" />
           </Link>
 
           {/* Separator */}
           <div className="mx-2">
-            <Image src={garis} alt="garis" width={0.7}  quality={100} className="opacity-50" />
+            <Image src={garis} alt="garis" width={1} height={40} quality={100} className="opacity-50" />
           </div>
 
           {/* Navbar Logo */}
@@ -75,18 +76,18 @@ function Page() {
         <div className="flex flex-col lg:flex-row lg:pr-10  gap-5">
           {/* IMAGE */}
           <div className="flex justify-center lg:ml-16">
-            <Image src={almet} alt="almamater" width={600} quality={100} />
+            <Image src={bjuputih} alt="almamater" width={600} quality={100} />
           </div>
 
           {/* DETAILS */}
           <div className="lg:ml-10 self-center px-5">
             {/* Deskripsi Pesanan */}
             <p className="text-gray-600 text-2xl font-medium">Deskripsi Pesanan</p>
-            <h1 className="text-5xl font-extrabold mb-7">Jas Almamater</h1>
+            <h1 className="text-5xl font-extrabold mb-7">Kemeja Batik</h1>
 
             {/* Harga Pesanan */}
             <p className="text-gray-600 text-2xl font-medium">Harga Pesanan</p>
-            <h1 className="text-4xl font-bold mb-7 text-red-700">Rp 200.000</h1>
+            <h1 className="text-4xl font-bold mb-7 text-red-700">Rp 120.000</h1>
 
             {/* Ukuran */}
             <p className="text-gray-600 text-2xl font-medium">Ukuran</p>
