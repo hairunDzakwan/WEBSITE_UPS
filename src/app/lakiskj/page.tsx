@@ -14,6 +14,7 @@ import almet from "@/app/public/Group 87.png";
 import home from "@/app/public/ic_baseline-home.png";
 import garis from "@/app/public/Line 3.png";
 import bjuputih from '@/app/public/bj putih lk.png'
+import skj from '@/app/public/lakiskj.png'
 
 function Page() {
   const [selectedSize, setSelectedSize] = useState(null); // Menyimpan ukuran yang dipilih
@@ -76,7 +77,7 @@ function Page() {
         <div className="flex flex-col lg:flex-row lg:pr-10  gap-5">
           {/* IMAGE */}
           <div className="flex justify-center lg:ml-16">
-            <Image src={bjuputih} alt="almamater" width={600} quality={100} />
+            <Image src={skj} alt="almamater" width={600} quality={100} />
           </div>
 
           {/* DETAILS */}
