@@ -13,7 +13,7 @@ import dasi from '@/app/public/Group 75.png'
 import baju from '@/app/public/OJI09440 4.png'
 import celana from '@/app/public/OJI09440 3.png'
 import { FaSearch } from 'react-icons/fa'
-import styles from '@/app/baju/styles.module.css'
+import styles from '@/app/choose_bajuCwoCwe/styles.module.css'
 import kategori from '@/app/public/Group 82 (1).png'
 import home from '@/app/public/ic_baseline-home.png'
 import garis from '@/app/public/Line 3.png'
@@ -67,10 +67,10 @@ function page() {
     <Image src={back} alt='logo' width={35} quality={100} className={styles.back}/>
     </Link>
     <div className={styles.baju}>
-      <Link href="/bajulk">
+      <Link href="/choose_bajulk">
     <Image src={bajulk} alt='logo' width={500} quality={100} className={styles.lk} />
     </Link>
-    <Link href="/bajupr">
+    <Link href="/choose_bajupr">
     <Image src={bajupr} alt='logo' width={500} quality={100} className={styles.pr}/>
     </Link>
     </div>

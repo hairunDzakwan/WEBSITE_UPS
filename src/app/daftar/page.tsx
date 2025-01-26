@@ -62,36 +62,37 @@ function page() {
 
         {/* Categories Section */}
         <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mt-10 px-4">
+          
           {/* Category Links */}
-          <Link href="/dasi" className={styles.con}>
+          <Link href="/choose_dasi" className={styles.con}>
             <div className="">
               <Image src={dasi} width={200} alt="dasi" className={styles.kategori} />
               <Image src={kategori} width={330} alt="kategori" className={styles.latar} />
             </div>
           </Link>
 
-          <Link href="/celana" className={styles.con}>
+          <Link href="/choose_celana" className={styles.con}>
             <div className="">
               <Image src={celana} width={200} alt="celana" className={styles.kategori} />
               <Image src={kategori} width={330} alt="kategori" className={styles.latar} />
             </div>
           </Link>
 
-          <Link href="/baju" className={styles.con}>
+          <Link href="/choose_bajuCwoCwe" className={styles.con}>
             <div className="">
               <Image src={baju} width={200} alt="baju" className={styles.kategori} />
               <Image src={kategori} width={330} alt="kategori" className={styles.latar} />
             </div>
           </Link>
 
-          <Link href="/topi" className={styles.con}>
+          <Link href="/choose_topi" className={styles.con}>
             <div className="">
               <Image src={topi} width={290} alt="topi" className={styles.kategori} style={{marginLeft:15, marginTop:-40}}/>
               <Image src={kategori} width={330} alt="kategori" className={styles.latar} />
             </div>
           </Link>
 
-          <Link href="/lambang" className={styles.con}>
+          <Link href="/choose_lambang" className={styles.con}>
             <div className="">
               <Image src={logo} width={240} alt="logo" className={styles.kategori} style={{marginLeft:50, marginTop:10}} />
               <Image src={kategori} width={330} alt="kategori" className={styles.latar} />

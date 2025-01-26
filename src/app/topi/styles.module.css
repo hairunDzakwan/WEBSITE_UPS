@@ -1,6 +1,13 @@
 .back{
     margin-top: 20px;
     margin-left: 22px;
+    display: none;
+  display: block;
+}
+@media (min-width: 768px) {
+    .md\:block {
+        display: block;
+    }
 }
 .baju{
     display: flex;
