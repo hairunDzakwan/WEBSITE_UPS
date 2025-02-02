@@ -71,7 +71,7 @@ function page() {
             </div>
           </Link>
 
-          <Link href="/choose_celana" className={styles.con}>
+          <Link href="/choose_celanaCwoCwe" className={styles.con}>
             <div className="">
               <Image src={celana} width={200} alt="celana" className={styles.kategori} />
               <Image src={kategori} width={330} alt="kategori" className={styles.latar} />

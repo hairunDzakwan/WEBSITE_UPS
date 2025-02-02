@@ -9,16 +9,17 @@ import poster2 from '@/app/public/Group 83.png'
 
 import logo from '@/app/public/Group 77.png'
 import topi from '@/app/public/Group 74.png'
+import dasi from '@/app/public/Group 75.png'
 import baju from '@/app/public/OJI09440 4.png'
 import celana from '@/app/public/OJI09440 3.png'
 import { FaSearch } from 'react-icons/fa'
-import styles from '@/app/choose_dasi/styles.module.css'
+import styles from '@/app/choose_bajuCwoCwe/styles.module.css'
 import kategori from '@/app/public/Group 82 (1).png'
 import home from '@/app/public/ic_baseline-home.png'
 import garis from '@/app/public/Line 3.png'
 import back from '@/app/public/ep_back.png'
-import icondasi from '@/app/public/icondasi.png'
-import dasi from '@/app/public/dasi.png'
+import clnalk from '@/app/public/clnaa.png'
+import clnapr from '@/app/public/rokk.png'
 
 
 
@@ -26,7 +27,6 @@ function page() {
   return (
     <>
     <div className='h-screen'>
-
         {/* HEADER */}
         <div className="border-b-2 border-black bg-red-900 flex items-center py-3 px-5">
           {/* Home Icon */}
@@ -74,22 +74,16 @@ function page() {
           />
         </Link>
 
-        {/* Isi */}
-    <div className='flex ml-60 '>
-      <Link href="/choose_dasi">
-    <Image src={icondasi} alt='logo' width={500} quality={100} className={styles.lk} />
+    {/* isi */}
+    <div className={styles.baju}>
+      <Link href="/choose_celanalk">
+    <Image src={clnalk} alt='logo' width={500} quality={100} className={styles.lk} />
     </Link>
-
-    
-    <div className={styles.container}>
-
-      <Link href="/dasiharga">
-      <Image src={dasi} alt='logo' width={400} quality={100} className={styles.lk} />
-      </Link>
-
-      </div>
+    <Link href="/choose_rokpr">
+    <Image src={clnapr} alt='logo' width={500} quality={100} className={styles.pr}/>
+    </Link>
     </div>
-  </div>
+    </div>
   
     </>
   )

@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom dengan ukuran sama */
+    gap: 16px; /* Jarak antar elemen */
+    margin-left: 100px;
+  }
+  .back{
+    margin-top: 20px;
+    margin-left: 22px;
+}

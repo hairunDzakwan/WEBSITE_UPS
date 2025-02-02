@@ -9,16 +9,19 @@ import poster2 from '@/app/public/Group 83.png'
 
 import logo from '@/app/public/Group 77.png'
 import topi from '@/app/public/Group 74.png'
+import dasi from '@/app/public/Group 75.png'
 import baju from '@/app/public/OJI09440 4.png'
 import celana from '@/app/public/OJI09440 3.png'
 import { FaSearch } from 'react-icons/fa'
-import styles from '@/app/choose_dasi/styles.module.css'
+import styles from '@/app/choose_bajulk/styles.module.css'
 import kategori from '@/app/public/Group 82 (1).png'
 import home from '@/app/public/ic_baseline-home.png'
 import garis from '@/app/public/Line 3.png'
 import back from '@/app/public/ep_back.png'
-import icondasi from '@/app/public/icondasi.png'
-import dasi from '@/app/public/dasi.png'
+import clnaabu from '@/app/public/clnaabucwo.png'
+import clnaprmka from '@/app/public/clnaprmkcwo.png'
+import clnaolga from '@/app/public/clnaolgacwo.png'
+import clnaa from '@/app/public/iconclnacwo.png'
 
 
 
@@ -64,7 +67,7 @@ function page() {
         </div>
 
         {/* Tombol Back */}
-        <Link href="/daftar">
+        <Link href="/choose_celanaCwoCwe">
           <Image 
             src={back} 
             alt="Back" 
@@ -76,16 +79,23 @@ function page() {
 
         {/* Isi */}
     <div className='flex ml-60 '>
-      <Link href="/choose_dasi">
-    <Image src={icondasi} alt='logo' width={500} quality={100} className={styles.lk} />
+      <Link href="/choose_celanalk">
+    <Image src={clnaa} alt='logo' width={500} quality={100} className={styles.lk} />
     </Link>
-
-    
     <div className={styles.container}>
 
-      <Link href="/dasiharga">
-      <Image src={dasi} alt='logo' width={400} quality={100} className={styles.lk} />
+      <Link href="/laki_clnabu">
+      <Image src={clnaabu} alt='logo' width={400} quality={100} className={styles.lk} />
       </Link>
+
+      <Link href="/laki_clnprmka">
+      <Image src={clnaprmka} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
+      <Link href="/laki_clnolga">
+      <Image src={clnaolga} alt='logo' width={400} quality={100} className={styles.lk} />
+      </Link>
+
 
       </div>
     </div>

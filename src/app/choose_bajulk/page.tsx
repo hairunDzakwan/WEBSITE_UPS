@@ -71,7 +71,7 @@ function page() {
     <Image src={User} alt='logo' width={38} quality={100} />
     </div>
     </div>
-    <Link href="/baju">
+    <Link href="/choose_bajuCwoCwe">
     <Image src={back} alt='logo' width={35} quality={100} className={styles.back}/>
     </Link>
 
