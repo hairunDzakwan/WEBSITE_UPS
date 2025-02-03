@@ -78,7 +78,7 @@ function Page() {
         <div className="flex flex-col lg:flex-row lg:pr-10  gap-5">
           {/* IMAGE */}
           <div className="flex justify-center lg:ml-16">
-            <Image src={pramuka} alt="clna prmk" width={600} quality={100} />
+            <Image src={prmk} alt="clna prmk" width={600} quality={100} />
           </div>
 
           {/* DETAILS */}
