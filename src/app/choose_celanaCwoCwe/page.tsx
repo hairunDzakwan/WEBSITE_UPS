@@ -79,7 +79,7 @@ function page() {
       <Link href="/choose_celanalk">
     <Image src={clnalk} alt='logo' width={500} quality={100} className={styles.lk} />
     </Link>
-    <Link href="/choose_rokpr">
+    <Link href="/choose_celanapr">
     <Image src={clnapr} alt='logo' width={500} quality={100} className={styles.pr}/>
     </Link>
     </div>

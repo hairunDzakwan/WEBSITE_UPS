@@ -85,15 +85,15 @@ function page() {
     </Link>
     <div className={styles.container}>
 
-      <Link href="/pr_rokabu">
+      <Link href="/rokAbu">
       <Image src={clnaabu} alt='logo' width={400} quality={100} className={styles.lk} />
       </Link>
 
-      <Link href="/pr_rokprmka">
+      <Link href="/rokPramuka">
       <Image src={clnaprmka} alt='logo' width={400} quality={100} className={styles.lk} />
       </Link>
 
-      <Link href="/pr_clnolga">
+      <Link href="/rokOlga">
       <Image src={clnaolga} alt='logo' width={400} quality={100} className={styles.lk} />
       </Link>
 
