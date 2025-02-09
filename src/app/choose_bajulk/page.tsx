@@ -64,12 +64,14 @@ function page() {
         ))}
       </ul> */}
     </div>
-    <div className='mt-8 mr-5 '>
-    <Image src={Cart} alt='logo' width={40} quality={100} />
-    </div>
-    <div className='mt-8 '>
-    <Image src={User} alt='logo' width={38} quality={100} />
-    </div>
+    <div className="flex items-center space-x-5 mr-6">
+            <Link href='/keranjang' className="flex items-center">
+              <Image src={Cart} alt="Cart" width={40} height={40} quality={100} />
+            </Link>
+            <Link href='/profil' className="flex items-center">
+              <Image src={User} alt="User" width={38} height={38} quality={100} />
+            </Link>
+          </div>
     </div>
     <Link href="/choose_bajuCwoCwe">
     <Image src={back} alt='logo' width={35} quality={100} className={styles.back}/>

@@ -59,7 +59,7 @@ function login() {
             htmlFor="floatingName"
             className="absolute text-gray-500 text-sm duration-300 transform -translate-y-4 scale-75 top-5 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
           >
-            No. Handphone
+            Username
           </label>
         </div>
         {/* Form 2 */}
@@ -98,11 +98,11 @@ function login() {
         
         <div className='flex text-sm gap-9 ml-40 mt-2'>
         <div className='-ml-3 font-normal relative '>
-          Sudah Punya Akun?
+          Belum Punya Akun?
         </div>
         <Link href='/'>
         <div className=' font-normal ml-4 relative text-blue-500 w-16 '>
-          Masuk
+          Daftar
         </div>
         </Link>
         </div>

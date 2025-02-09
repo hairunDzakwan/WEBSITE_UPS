@@ -41,12 +41,12 @@ function page() {
 
           {/* Cart and User Icons */}
           <div className="flex items-center space-x-5 mr-6">
-            <div className="flex items-center">
+            <Link href='/keranjang' className="flex items-center">
               <Image src={Cart} alt="Cart" width={40} height={40} quality={100} />
-            </div>
-            <div className="flex items-center">
+            </Link>
+            <Link href='/profil' className="flex items-center">
               <Image src={User} alt="User" width={38} height={38} quality={100} />
-            </div>
+            </Link>
           </div>
         </div>
 

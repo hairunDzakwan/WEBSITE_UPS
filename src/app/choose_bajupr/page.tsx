@@ -64,9 +64,13 @@ function page() {
           </div>
 
           {/* Icons */}
-          <div className="flex space-x-4">
-            <Image src={Cart} alt="cart" width={40} quality={100} />
-            <Image src={User} alt="user" width={38} quality={100} />
+          <div className="flex items-center space-x-5 mr-6">
+            <Link href='/keranjang' className="flex items-center">
+              <Image src={Cart} alt="Cart" width={40} height={40} quality={100} />
+            </Link>
+            <Link href='/profil' className="flex items-center">
+              <Image src={User} alt="User" width={38} height={38} quality={100} />
+            </Link>
           </div>
         </div>
 

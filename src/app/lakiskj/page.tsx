@@ -56,9 +56,13 @@ function Page() {
           </div>
 
           {/* Icons */}
-          <div className="flex space-x-4">
-            <Image src={Cart} alt="cart" width={40} quality={100} />
-            <Image src={User} alt="user" width={38} quality={100} />
+          <div className="flex items-center space-x-5 mr-6">
+            <Link href='/keranjang' className="flex items-center">
+              <Image src={Cart} alt="Cart" width={40} height={40} quality={100} />
+            </Link>
+            <Link href='/profil' className="flex items-center">
+              <Image src={User} alt="User" width={38} height={38} quality={100} />
+            </Link>
           </div>
         </div>
 
@@ -112,12 +116,12 @@ function Page() {
 
             {/* Tombol Aksi */}
             <div className="flex flex-col md:flex-row md:space-x-6 mt-8 space-y-4 md:space-y-0">
-              <button className="bg-red-700 text-white px-5 py-4 rounded-full text-2xl font-bold w-full md:w-auto hover:bg-red-800 transition duration-300">
+            <Link href='/keranjang' className="bg-red-700 text-white px-5 py-4 rounded-full text-2xl font-bold w-full md:w-auto hover:bg-red-800 transition duration-300">
                 Masukkan Keranjang
-              </button>
-              <button className="bg-gray-700 text-white px-5 py-4 rounded-full text-2xl font-bold w-full md:w-auto hover:bg-gray-800 transition duration-300">
+              </Link>
+              <Link href='/buatpesanan' className="bg-gray-700 text-white px-5 py-4 rounded-full text-2xl font-bold w-full md:w-auto hover:bg-gray-800 transition duration-300">
                 Beli Sekarang
-              </button>
+              </Link>
             </div>
           </div>
         </div>
