@@ -66,7 +66,7 @@ function Page() {
         </div>
 
         {/* Tombol Back */}
-        <Link href="/bajulk">
+        <Link href="/choose_bajulk">
           <Image 
             src={back} 
             alt="Back" 
