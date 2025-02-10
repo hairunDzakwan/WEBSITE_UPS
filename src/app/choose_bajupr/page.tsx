@@ -118,7 +118,7 @@ function page() {
       <Image src={olahraga33} alt='logo' width={400} quality={100} className={styles.lk} />
       </Link>
 
-      <Link href="/ceweOlahraga">
+      <Link href="/ceweOlga">
       <Image src={olahraga32} alt='logo' width={400} quality={100} className={styles.lk} />
       </Link>
 

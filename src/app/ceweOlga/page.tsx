@@ -86,14 +86,14 @@ function Page() {
         <div className="flex flex-col lg:flex-row lg:pr-10  gap-5">
           {/* IMAGE */}
           <div className="flex justify-center lg:ml-16">
-            <Image src={olga} alt="skj" width={600} quality={100} />
+            <Image src={skj} alt="skj" width={600} quality={100} />
           </div>
 
           {/* DETAILS */}
           <div className="lg:ml-10 self-center px-5">
             {/* Deskripsi Pesanan */}
             <p className="text-gray-600 text-2xl font-medium">Deskripsi Pesanan</p>
-            <h1 className="text-5xl font-extrabold mb-7">Baju Olahraga</h1>
+            <h1 className="text-5xl font-extrabold mb-7">Baju Senam</h1>
 
             {/* Harga Pesanan */}
             <p className="text-gray-600 text-2xl font-medium">Harga Pesanan</p>
