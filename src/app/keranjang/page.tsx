@@ -97,9 +97,9 @@ export default function Cart() {
         {/* Total dan Tombol Pesanan */}
         <div className="flex justify-between items-center mt-6">
           <p className="text-lg font-semibold">Total: Rp{totalPrice.toLocaleString()}</p>
-          <button className="bg-red-8 00 text-white px-6 py-2 rounded-md font-semibold hover:bg-red-950">
+          <Link href='/buatpesanan' className="bg-red-800 text-white px-6 py-2 rounded-md font-semibold hover:bg-red-900">
             Buat Pesanan
-          </button>
+          </Link>
         </div>
       </div>
     </div>

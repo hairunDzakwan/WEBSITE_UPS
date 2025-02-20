@@ -1,75 +1,101 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Foto from '../public/OJI09321 1.png'
 import Foto1 from '../public/images15.png'
-import Link from 'next/link';
-import Login from '@/app/Login/page'
+
+
 import page from '../page';
 import Navbar from '@/app/public/logo-telkom-schools 1.png'
+import { useAuth } from '@/context/AuthContext';
 
 
-function login() {
+  function Login() {
+    const { login } = useAuth();
+    const [form, setForm] = React.useState({
+      username: '',
+      password: '',
+    });
+  
+    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setForm({
+        ...form,
+        [event.target.name]: event.target.value,
+      });
+    };
+  
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+      event.preventDefault();
+      login(form);
+    };
+
+  
   return (
     <>
-    <div className='h-screen'>
-       <div className=' border-b-2 border-black '>
-    <div className='py-6 ml-28 '> {/* Menambahkan border-bottom hitam */}
-        <Image src={Navbar} alt='logo' width={240} quality={100} />
-    </div>
-    </div>
-    <div className='   relative '> 
+    <div className="h-screen flex flex-col">
+        {/* Navbar */}
+        <div className="border-b-2 border-black">
+          <div className="py-6 px-4 sm:px-10">
+            <Image src={Navbar} alt="logo" width={240} quality={100} />
+          </div>
+        </div>
 
-      <div className='flex items-center  mt-10  '>
-  
-        <Image 
-          src={Foto1} 
-          alt='foto1' 
-          className='absolute  top-9 left-96 ml-36 transform -translate-x-1/2' 
-          width={420} 
-          quality={100}
-        />
-     
+        {/* Content */}
+        <div className="flex-1 flex flex-col lg:flex-row items-center justify-between relative mt-10 lg:mt-0 px-4 sm:px-10 space-y-16 lg:space-y-0">
+          {/* Left Images */}
+          <div className="relative flex-shrink-0 flex items-center justify-center w-full lg:w-1/2">
+            <div className="relative">
+              <Image
+                src={Foto1}
+                alt="foto1"
+                className="absolute top-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-60"
+                width={420}
+                quality={100}
+                style={{ marginTop: 50 }}
+              />
+              <Image
+                src={Foto}
+                alt="foto"
+                className="relative z-10 mt-16 lg:mt- lg:ml-10"
+                style={{ marginTop: 118 }}
+                width={800}
+                quality={100}
+              />
+            </div>
+          </div>
       
-        <Image 
-          src={Foto} 
-          alt='foto' 
-          className='relative z-10 ml-10 mt-20 left-20' 
-          width={800}
-          quality={100} 
-        />
-
-      
-        <div className='ml-64 -mt-48' >
+        <div className=' -mt-48 flex flex-col items-center w-full lg:w-1/2' >
           <div className='pb-16'>
             <h1 className='text-6xl -mt-10 font-bold text-black text-center'>Masuk</h1>
           </div>
-          <div className=" flex ">
-      <form className="  rounded-lg   max-w-lg">
+          <div className="">
+      <form onSubmit={handleSubmit} className="  rounded-lg   max-w-lg">
         {/* Form 1 */}
-        <div className="relative -mt-3">
-          <input
-            type="number"
-            id="floatingName"
-            name="floatingName"
-            placeholder=" "
-            className="peer  px-40 py-7  border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
-            
-          />
-          <label
-            htmlFor="floatingName"
-            className="absolute text-gray-500 text-sm duration-300 transform -translate-y-4 scale-75 top-5 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
-          >
-            Username
-          </label>
-        </div>
-        {/* Form 2 */}
-        <div className="relative mt-4">
+        <div onChange={handleChange} className="relative -mt-4  ">
           <input
             type="text"
+           id="floatingName"
+            name="email"
+           placeholder=''
+            className="peer px-4 py-7 border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+            style={{width: 500}}  
+            />
+            <label
+              htmlFor="floatingName"
+              className="absolute text-gray-500 text-sm duration-300 transform -translate-y-4 scale-75 top-5 left-3 z-10 origin-[0] bg-white px-1 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-2.5 peer-focus:scale-75 peer-focus:-translate-y-5"
+            >
+              Username
+            </label>
+        </div>
+        {/* Form 2 */}
+        <div onChange={handleChange} className="relative mt-4">
+          <input
+            type="password"
             id="floatingName"
-            name="floatingName"
+            name="password"
             placeholder=" "
-            className="peer px-40 py-7 border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+            style={{width: 500}}  
+            className="peer px-4 py-7 border  shadow-custom border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
           />
           <label
             htmlFor="floatingName"
@@ -84,7 +110,7 @@ function login() {
         {/* Submit Button */}
        
         <div className="ml-36 mt-6">
-          <Link href="/daftar">
+          
           <button 
           
             type="submit"
@@ -92,7 +118,7 @@ function login() {
           >
             MASUK
           </button>
-          </Link>
+          
           </div>
           
         
@@ -100,11 +126,11 @@ function login() {
         <div className='-ml-3 font-normal relative '>
           Belum Punya Akun?
         </div>
-        <Link href='/'>
+        
         <div className=' font-normal ml-4 relative text-blue-500 w-16 '>
           Daftar
         </div>
-        </Link>
+       
         </div>
         
       </form>
@@ -174,9 +200,9 @@ function login() {
     </div>
       </div>
     </div>
-    </div>
+    
     </>
   )
 }
 
-export default login
+export default Login

@@ -61,7 +61,7 @@ function page() {
         </div>
 
         {/* Categories Section */}
-        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mt-10 px-4">
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mt-7 px-4">
           
           {/* Category Links */}
           <Link href="/choose_dasi" className={styles.con}>
