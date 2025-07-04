@@ -1,0 +1,25 @@
+.back{
+    margin-top: 20px;
+    margin-left: 22px;
+    display: none;
+  display: block;
+}
+@media (min-width: 768px) {
+    .md\:block {
+        display: block;
+    }
+}
+.baju{
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    transition:  all 0.6s ease;
+}
+
+
+.pr:hover{
+    opacity: 0.5;
+}
+.lk:hover{
+    opacity: 0.5;
+}
